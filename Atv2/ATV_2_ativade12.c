@@ -14,7 +14,7 @@ main(){
 	scanf("%f",&horasTrabalhadas);
 	printf("Digite quantos dias voce trabalhou! ");
 	scanf("%f",&diasTrabalhados);
-	printf("Digite quantas horas extras voce trabalhou no mes");
+	printf("Digite quantas horas extras voce trabalhou no mes ");
 	scanf("%f",&horasExtrasTrabalhadas);
 	calcSalarioMensal=(valorHora*horasTrabalhadas)*diasTrabalhados;
 	calcHoraExtra=valorHoraExtra*horasExtrasTrabalhadas;
