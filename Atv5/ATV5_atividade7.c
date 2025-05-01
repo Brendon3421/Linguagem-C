@@ -2,7 +2,7 @@
 main(){
 	int alunos;
 	float mediaTeorica,mediaLaboratorial,mediaFinal;
-	for(alunos = 30; alunos <= 30;alunos++){
+	for(alunos = 5; alunos <= 5;alunos++){
 		printf("Coloque sua media de teoria e a media de laboratorio,separados por espaco\n");
 		scanf("%f %f",&mediaTeorica,&mediaLaboratorial);
 		mediaFinal = (mediaTeorica * 0.6) + (mediaLaboratorial * 0.4);

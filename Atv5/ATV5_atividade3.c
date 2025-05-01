@@ -13,4 +13,4 @@ main(){
 			printf("O numero e positivo! o numero: %d\n" ,number);
 		}
 	}
-}n
+}
