@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <float.h>  // Para FLT_MAX
 
-int main() {
+int main() {ṭ
     float alturaMasculina, alturaFeminina;
     float menorAlturaMasculina = FLT_MAX, maiorAlturaMasculina = 0;
     float menorAlturaFeminina = FLT_MAX, maiorAlturaFeminina = 0;
