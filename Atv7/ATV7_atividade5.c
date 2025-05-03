@@ -13,10 +13,7 @@ main(){
 	int number1,number2,opcao;
 	do{
 		printf("  | Soma  1 | Subtracao 2 | Multiplicacao 3 | Divisao  4| Sair 5 \n");
-		scanf("%d",&opcao);
-		
-		
-	
+		scanf("%d",&opcao);		
 		switch(opcao){
 			case 1:
 				printf("Coloque o primeiro numero! \n");
