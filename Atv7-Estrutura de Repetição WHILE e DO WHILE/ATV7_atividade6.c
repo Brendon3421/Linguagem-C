@@ -1,4 +1,4 @@
-#include<stdio.h>
+include<stdio.h>
 /*
 Escreva um programa para receber o saldo inicial de uma conta bancária
 de um cliente. A seguir ler um número indeterminado de pares de valores
