@@ -1,4 +1,4 @@
-include<stdio.h>
+#include<stdio.h>
 /*
 Escreva um programa para receber o saldo inicial de uma conta bancária
 de um cliente. A seguir ler um número indeterminado de pares de valores
@@ -18,7 +18,7 @@ main(){
 	printf("Coloque seu saldo Inical! \n");
 	scanf("%f",&saldoBancario);
 	do{	
-	printf(" \n1 para deposito! \n 2 para retirada \n 3 sair \n");
+	printf("\n 1 para deposito!\n 2 para retirada\n 3 para consultar seu saldo\n 4 sair \n");
 	scanf("%d",&opcao);
 	while(opcao != 1 && opcao != 2 && opcao != 3){
 		printf("Coloque um valor valido!");
@@ -36,12 +36,19 @@ main(){
 				case 2:
 			printf("Coloque o valor que desaja retirar \n");
 			scanf("%f",&valorSaque);
-			saldoBancario = saldoBancario - valorSaque;
-			printf("foi descontado %0.2f no seu saldo bancario! o seu saldo ficou em %0.2f \n",valorSaque,saldoBancario);
+			if(saldoBancario < valorSaque){
+				printf("voce nao possui saldo suficiente! ou conta esta negativada!");
+			}else{
+				saldoBancario = saldoBancario - valorSaque;
+				printf("foi descontado %0.2f no seu saldo bancario! o seu saldo ficou em %0.2f \n",valorSaque,saldoBancario);
+			}
+			break;
+			case 3:
+			printf("O seu saldo ficou em %0.2f \n",saldoBancario);
 			break;
 	}
 	
-}while(opcao != 3);
+}while(opcao != 4);
 printf("saldo final: %0.2f \n",saldoBancario);
 if(saldoBancario < 0){
 	printf("Conta negativa! \n");
